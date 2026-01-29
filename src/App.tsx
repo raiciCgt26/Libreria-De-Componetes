@@ -3,13 +3,13 @@ import { ButtonWithIcons } from "@/componentes";
 import { ButtonsGroups, ToggleButtons } from "@/componentes";
 import { ButtonFAB } from "@/componentes";
 import { ButtonIconC } from "@/componentes";
+import { ButtonDisabled } from "@/componentes";
 
 const App = () => {
   return (
     <>
       <div className="min-h-screen p-8 ">
         <h1 className="text-3xl font-bold mb-6">Mi Reto de Componentes</h1>
-
         <div className="space-y-4 mb-6">
           <h2 className="text-xl font-semibold ">
             Día 1: Botón primario, secundario, outline
@@ -21,7 +21,6 @@ const App = () => {
             <Button text="Botón Error" options="error" />
           </div>
         </div>
-
         <div className="space-y-4 mb-6">
           <h2 className="text-xl font-semibold">
             Día 2: Botones con íconos, estados (hover, transparent, outline)
@@ -111,7 +110,6 @@ const App = () => {
             {/*  */}
           </div>
         </div>
-
         <div className="space-y-4 mb-6">
           <h2 className="text-xl font-semibold">
             Día 3: Button group, toggle buttons.
@@ -157,7 +155,7 @@ const App = () => {
             <ToggleButtons text1="a" text2="b" />
           </div>
         </div>
-
+        {/*  */}
         <div className="space-y-4 mb-6">
           <h2 className="text-xl font-semibold">
             Día 4: FAB (Floating Action Button)
@@ -194,6 +192,42 @@ const App = () => {
           </div>
           {/*  */}
         </div>
+        {/*  */}
+        <div className="space-y-4 mb-6">
+          <h2 className="text-xl font-semibold">
+            Día 6: Button sizes, disabled states
+          </h2>
+          <div className="flex gap-4">
+            <ButtonDisabled
+              options="disabled"
+              text="Guardar"
+              size="md"
+            ></ButtonDisabled>
+            {/*  */}
+            <ButtonDisabled
+              options="enabled"
+              text="Guardar"
+              size="md"
+            ></ButtonDisabled>
+            {/*  */}
+            <ButtonDisabled
+              options="enabled"
+              text="Guardar"
+              size="sm"
+            ></ButtonDisabled>
+            <ButtonDisabled
+              options="enabled"
+              text="Guardar"
+              size="md"
+            ></ButtonDisabled>
+            <ButtonDisabled
+              options="enabled"
+              text="Guardar"
+              size="lg"
+            ></ButtonDisabled>
+          </div>
+        </div>
+
         {/*  */}
       </div>
     </>

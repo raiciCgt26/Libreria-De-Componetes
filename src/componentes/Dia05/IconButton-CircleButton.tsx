@@ -47,13 +47,9 @@ export const ButtonIconC = ({
     <>
       <button
         className={`
-
-          
         ${opc[options]} 
         ${icon[icons]}
         ${optionSize[size]}
-  =
-       
         `}
       >
         <div className="flex justify-center ">
