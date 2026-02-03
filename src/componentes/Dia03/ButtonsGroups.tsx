@@ -1,3 +1,39 @@
+/**
+ * Botón en grupo estilizado con Tailwind CSS.
+ * Permite crear un grupo de dos botones , cada uno con texto e iconos independientes, con variaciones de tamaño, direccion y efecto.
+ * * @example
+ * <ButtonsGroups text1="Regresar" text2="Home" icon1="chev" icon2="home" size="md" direction="x"></ButtonsGroups>
+ * * @param {ButtonIconProp} props - Propiedades para personalizar el botón.
+ * @returns {JSX.Element} Un elemento grupo de botones interactivo.
+ */
+interface ButtonIconProp {
+  /** Texto para el primer botón del grupo */
+  text1?: string;
+  /** Texto para el segundo botón del grupo */
+  text2?: string;
+
+  /** Icono del primer botón.
+   * @default "none" */
+  icon1?: "search" | "delet" | "home" | "user" | "sett" | "chev" | "none";
+  /** Icono del segundo botón.
+   * @default "none" */
+  icon2?: "search" | "delet" | "home" | "user" | "sett" | "chev" | "none";
+
+  /** * Define el efecto visual del comoponente al hacer hover.
+   * @default "transparent"*/
+  options?: "hover" | "transparent" | "outline" | "pulso";
+  /** * Escala de tamaño del componente (padding y fuente).
+   * @default "sm"
+   */
+  size?: "sm" | "md" | "lg" | "xl";
+  /** * Eje de alineación de los botones.
+   * @default "x" (Horizontal)
+   */
+  direction?: "x" | "y";
+}
+
+//
+
 import {
   Home,
   User,

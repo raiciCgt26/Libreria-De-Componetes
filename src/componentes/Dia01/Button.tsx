@@ -1,3 +1,22 @@
+/**
+ * Botón estilizado con Tailwind CSS.
+ * Permite diferentes variantes visuales mediante la prop `options`.
+ * * @example
+ * <Button text="Guardar cambios" options="success" />
+ * * @param {ButtonProp} props - Propiedades para personalizar el botón.
+ * @returns {JSX.Element} Un elemento de botón interactivo.
+ */
+interface ButtonProp {
+  /** El contenido textual que se mostrará dentro del botón. */
+  text: string;
+  /** * Define el esquema de color y comportamiento visual.
+   * @default "info"
+   */
+  options?: "info" | "success" | "error";
+}
+
+//
+
 interface ButtonProp {
   text: string;
   options?: "info" | "success" | "error";
